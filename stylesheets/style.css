@@ -80,20 +80,65 @@ body {
 /* line 1, ../sass/_sidebar.scss */
 .sidebar {
   width: 60px;
-  height: 1000px;
+  height: 615px;
   display: block;
   background: #333333;
   float: left; }
 
-/* line 1, ../sass/_main.scss */
-#container {
-  float: left;
-  display: block; }
-  /* line 5, ../sass/_main.scss */
-  #container .item {
-    display: block;
-    width: 200px;
-    height: 100px; }
+/* line 5, ../sass/_main.scss */
+#container .item {
+  width: 422px;
+  height: 248px;
+  background: blue; }
+
+/**** Isotope Filtering ****/
+/* line 14, ../sass/_main.scss */
+.isotope-item {
+  z-index: 2;
+  margin-top: 4rem;
+  margin-left: 4rem; }
+
+/* line 20, ../sass/_main.scss */
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1; }
+
+/**** Isotope CSS3 transitions ****/
+/* line 28, ../sass/_main.scss */
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s; }
+
+/* line 36, ../sass/_main.scss */
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width; }
+
+/* line 44, ../sass/_main.scss */
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  transition-property: transform, opacity; }
+
+/**** disabling Isotope CSS3 transitions ****/
+/* line 56, ../sass/_main.scss */
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s; }
 
 /* line 13, ../sass/style.scss */
 html {
