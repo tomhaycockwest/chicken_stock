@@ -5,7 +5,7 @@
 	.item {
 		width: 422px;
 		height: 248px;
-		background: gray;
+		background-image: url('../img/office.png');
 		@include box-shadow(black, 2px, 2px, 10px);
 
 		.banner {
