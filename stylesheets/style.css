@@ -77,6 +77,24 @@ body {
     color: #eeeeee;
     padding: 1rem; }
 
-/* line 11, ../sass/style.scss */
+/* line 1, ../sass/_sidebar.scss */
+.sidebar {
+  width: 60px;
+  height: 1000px;
+  display: block;
+  background: #333333;
+  float: left; }
+
+/* line 1, ../sass/_main.scss */
+#container {
+  float: left;
+  display: block; }
+  /* line 5, ../sass/_main.scss */
+  #container .item {
+    display: block;
+    width: 200px;
+    height: 100px; }
+
+/* line 13, ../sass/style.scss */
 html {
   font-size: 62.5%; }
