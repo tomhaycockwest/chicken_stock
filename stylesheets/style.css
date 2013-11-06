@@ -58,6 +58,320 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
+/* Reset */
+/* line 2, ../sass/_flipclock.scss */
+.flip-clock-wrapper * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 13, ../sass/_flipclock.scss */
+.flip-clock-wrapper a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #ccc; }
+
+/* line 20, ../sass/_flipclock.scss */
+.flip-clock-wrapper a:hover {
+  color: #fff; }
+
+/* line 24, ../sass/_flipclock.scss */
+.flip-clock-wrapper ul {
+  list-style: none; }
+
+/* line 29, ../sass/_flipclock.scss */
+.flip-clock-wrapper.clearfix:before,
+.flip-clock-wrapper.clearfix:after {
+  content: " ";
+  display: table; }
+
+/* line 34, ../sass/_flipclock.scss */
+.flip-clock-wrapper.clearfix:after {
+  clear: both; }
+
+/* line 38, ../sass/_flipclock.scss */
+.flip-clock-wrapper.clearfix {
+  *zoom: 1; }
+
+/* Main */
+/* line 44, ../sass/_flipclock.scss */
+.flip-clock-wrapper {
+  min-height: 100%;
+  font: normal 11px "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-user-select: none; }
+
+/* line 50, ../sass/_flipclock.scss */
+.flip-clock-meridium {
+  background: none;
+  box-shadow: 0 0 0 !important;
+  font-size: 36px !important;
+  color: #313333;
+  bottom: 10px; }
+
+/* line 59, ../sass/_flipclock.scss */
+.flip-clock-wrapper {
+  text-align: center;
+  position: relative;
+  width: 72%;
+  margin: 5rem auto;
+  display: block; }
+
+/* Skeleton */
+/* line 69, ../sass/_flipclock.scss */
+.flip-clock-wrapper ul {
+  position: relative;
+  float: left;
+  margin: 5px;
+  width: 60px;
+  height: 90px;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 87px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); }
+
+/* line 82, ../sass/_flipclock.scss */
+.flip-clock-wrapper ul li {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+
+/* line 92, ../sass/_flipclock.scss */
+.flip-clock-wrapper ul li:first-child {
+  z-index: 2; }
+
+/* line 96, ../sass/_flipclock.scss */
+.flip-clock-wrapper ul li a {
+  display: block;
+  height: 100%;
+  perspective: 200px;
+  margin: 0 !important;
+  overflow: visible !important; }
+
+/* line 104, ../sass/_flipclock.scss */
+.flip-clock-wrapper ul li a div {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  overflow: hidden; }
+
+/* line 113, ../sass/_flipclock.scss */
+.flip-clock-wrapper ul li a div .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2; }
+
+/* line 120, ../sass/_flipclock.scss */
+.flip-clock-wrapper ul li a div.up {
+  transform-origin: 50% 100%;
+  top: 0; }
+
+/* line 125, ../sass/_flipclock.scss */
+.flip-clock-wrapper ul li a div.up:after {
+  content: "";
+  position: absolute;
+  top: 44px;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+/* line 136, ../sass/_flipclock.scss */
+.flip-clock-wrapper ul li a div.down {
+  transform-origin: 50% 0%;
+  bottom: 0; }
+
+/* line 141, ../sass/_flipclock.scss */
+.flip-clock-wrapper ul li a div div.inn {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 200%;
+  color: #ccc;
+  text-shadow: 0 1px 2px #000;
+  text-align: center;
+  background-color: #333;
+  border-radius: 6px;
+  font-size: 70px; }
+
+/* line 155, ../sass/_flipclock.scss */
+.flip-clock-wrapper ul li a div.up div.inn {
+  top: 0; }
+
+/* line 160, ../sass/_flipclock.scss */
+.flip-clock-wrapper ul li a div.down div.inn {
+  bottom: 0; }
+
+/* PLAY */
+/* line 166, ../sass/_flipclock.scss */
+.flip-clock-wrapper ul.play li.flip-clock-before {
+  z-index: 3; }
+
+/* line 170, ../sass/_flipclock.scss */
+.flip-clock-wrapper ul.play li.flip-clock-active {
+  animation: asd .5s .5s linear both;
+  z-index: 2; }
+
+/* line 175, ../sass/_flipclock.scss */
+.flip-clock-divider {
+  float: left;
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 100px; }
+
+/* line 183, ../sass/_flipclock.scss */
+.flip-clock-divider:first-child {
+  width: 0; }
+
+/* line 185, ../sass/_flipclock.scss */
+.flip-clock-dot {
+  display: block;
+  background: #323434;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-radius: 1000px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+
+/* line 195, ../sass/_flipclock.scss */
+.flip-clock-divider .flip-clock-label {
+  display: none; }
+
+/* line 199, ../sass/_flipclock.scss */
+.flip-clock-divider.minutes .flip-clock-label {
+  right: -88px; }
+
+/* line 200, ../sass/_flipclock.scss */
+.flip-clock-divider.seconds .flip-clock-label {
+  right: -91px; }
+
+/* line 202, ../sass/_flipclock.scss */
+.flip-clock-dot.top {
+  top: 30px;
+  left: 5px; }
+
+/* line 207, ../sass/_flipclock.scss */
+.flip-clock-dot.bottom {
+  bottom: 30px;
+  left: 5px; }
+
+@keyframes asd {
+  /* line 213, ../sass/_flipclock.scss */
+  0% {
+    z-index: 2; }
+
+  /* line 216, ../sass/_flipclock.scss */
+  5% {
+    z-index: 4; }
+
+  /* line 219, ../sass/_flipclock.scss */
+  100% {
+    z-index: 4; } }
+
+/* line 224, ../sass/_flipclock.scss */
+.flip-clock-wrapper ul.play li.flip-clock-active .down {
+  z-index: 2;
+  animation: turn .5s .5s linear both; }
+
+@keyframes turn {
+  /* line 230, ../sass/_flipclock.scss */
+  0% {
+    transform: rotateX(90deg); }
+
+  /* line 233, ../sass/_flipclock.scss */
+  100% {
+    transform: rotateX(0deg); } }
+
+/* line 238, ../sass/_flipclock.scss */
+.flip-clock-wrapper ul.play li.flip-clock-before .up {
+  z-index: 2;
+  animation: turn2 .5s linear both; }
+
+@keyframes turn2 {
+  /* line 244, ../sass/_flipclock.scss */
+  0% {
+    transform: rotateX(0deg); }
+
+  /* line 247, ../sass/_flipclock.scss */
+  100% {
+    transform: rotateX(-90deg); } }
+
+/* line 252, ../sass/_flipclock.scss */
+.flip-clock-wrapper ul li.flip-clock-active {
+  z-index: 3; }
+
+/* SHADOW */
+/* line 256, ../sass/_flipclock.scss */
+.flip-clock-wrapper ul.play li.flip-clock-before .up .shadow {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, black));
+  background: linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, #000000 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, #000000 100%);
+  animation: show .5s linear both; }
+
+/* line 266, ../sass/_flipclock.scss */
+.flip-clock-wrapper ul.play li.flip-clock-active .up .shadow {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, black));
+  background: linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, #000000 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, black 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, #000000 100%);
+  animation: hide .5s .3s linear both; }
+
+/*DOWN*/
+/* line 278, ../sass/_flipclock.scss */
+.flip-clock-wrapper ul.play li.flip-clock-before .down .shadow {
+  background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -o-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -ms-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.1) 100%);
+  animation: show .5s linear both; }
+
+/* line 288, ../sass/_flipclock.scss */
+.flip-clock-wrapper ul.play li.flip-clock-active .down .shadow {
+  background: -moz-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, black), color-stop(100%, rgba(0, 0, 0, 0.1)));
+  background: linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -o-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: -ms-linear-gradient(top, black 0%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.1) 100%);
+  animation: hide .5s .3s linear both; }
+
+@keyframes show {
+  /* line 299, ../sass/_flipclock.scss */
+  0% {
+    opacity: 0; }
+
+  /* line 302, ../sass/_flipclock.scss */
+  100% {
+    opacity: 1; } }
+
+@keyframes hide {
+  /* line 308, ../sass/_flipclock.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 311, ../sass/_flipclock.scss */
+  100% {
+    opacity: 0; } }
+
 /* line 1, ../sass/_header.scss */
 body {
   background: #eeeeee;
@@ -157,6 +471,6 @@ body {
   -o-transition-duration: 0s;
   transition-duration: 0s; }
 
-/* line 14, ../sass/style.scss */
+/* line 15, ../sass/style.scss */
 html {
   font-size: 62.5%; }

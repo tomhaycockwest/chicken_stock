@@ -1,1 +1,1 @@
-$("#container").isotope({cellsByRow:{columnWidth:422,rowHeight:248}});
+$("#container").isotope({cellsByRow:{columnWidth:422,rowHeight:248}});var clock=$(".clock-chicken").FlipClock(3e3,{clockFace:"MinuteCounter"}),clock=$(".clock-turkey").FlipClock(3e3,{clockFace:"MinuteCounter"}),clock=$(".clock-duckling").FlipClock(3e3,{clockFace:"MinuteCounter"}),clock=$(".clock-geese").FlipClock(3e3,{clockFace:"MinuteCounter"});
